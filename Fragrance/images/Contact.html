@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contect</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* header section start */
+    .logo
+        {
+            
+            padding: 0px;
+            margin: 0px;
+            cursor: pointer;
+            font-weight:30px;
+            
+            
+        }
+        
+        .navbar {
+                 display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color:purple; 
+                padding: 15px 10px;
+                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+                 border-radius: 5px;
+                }
+
+        .logo {
+               color: black;
+               font-size: 50px;
+               font-weight: 40px;
+               letter-spacing:1px;
+               font-family: 'Courier New', Courier, monospace;
+               cursor: pointer;
+              }
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li,h1,ul {
+    margin-left: 30px; 
+    display: inline;
+}
+ul
+{
+    margin-left: 60px;
+}
+li{
+    color: gray;
+    cursor: pointer;
+}
+li:hover{
+    color: white;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    transform: scale(1.05); 
+}
+/*header section end */
+/* contact section start */
+.contact-container{
+    background-image: url(bg\ image\ 2.webp);
+    border: 2px solid purple;
+    backdrop-filter:blur(10px) ;
+}
+.contact-container {
+     
+     background-repeat: no-repeat;
+     background-size: cover;
+     max-width: 550px;
+     
+    margin: 40px auto;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color:white; 
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    
+}
+
+.submit-button:hover {
+    background-color:purple ; 
+}
+
+.contact-info {
+    margin-top: 30px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+}
+/* contact section end */
+ /* footer section start */
+ .footer {
+         background-color:black;
+        color: white;
+        padding: 20px;
+         }
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    color: #fff;
+    justify-content: space-between;
+    
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px; 
+    margin: 10px;
+
+}
+
+.footer-section h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: row;
+    }
+}
+  /* footer section end */
+  
+
+    </style>
+</head>
+<body>
+    <header>
+    <div class="header">
+        <nav class="navbar">
+            <h1>Blazing Fragrance </h1>
+
+            <ul>
+                <li><a href="index.html"><img src="images/home.png" alt="" height="20px" width="20px"> Home</a></li>
+                <li><a href="Fragrance.html"> <img src="perfume icon.png" alt="" height="20px" width="30px">Fragrances</a></li>
+                <li><a href="About.html"><img src="about icon.png" alt="" height="20px" width="20px">About Us</a></li>
+                <li><a href="contact.html"> <img src="contet icon.png" alt="" height="20px" width="20px">Contact</a></li>
+                <li><a href="review.html"><img src="review icon.png" alt="" height="20px" width="20px">Review</a></li>
+                <li><a href="Login.html"><img src="login icon.png" alt="" height="20px" width="20px">Login</a></li>
+                
+        
+            </ul>
+        </nav>
+     </header>
+    
+     <div class="container">
+    <main class="contact-container">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>Email: support@blazingfragrance.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Aroma Lane, Fragrance City, FC 12345</p>
+        </div>
+    </div>
+    <!-- footer section start -->
+  
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Discover the finest perfume from arouund the wolrd.our mission is to bring luxury fragrances to your doorstep</p>
+            </div> 
+            <br><br>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Fragrance</a></li>
+                    <li><a href="#">AboutUs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="apps">
+                    <a href="#"><img src="images/facebook.png" alt="image" height="20px" width="20px">Facebook</a>
+                    <a href="#"><img src="images/Instragram.png" alt="image" height="20px" width="20px">Instragram</a>
+                    <a href="#"><img src="images/Twitter1.png" alt="image" height="20px" width="20px">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- footer section end -->
+</body>
+</html>

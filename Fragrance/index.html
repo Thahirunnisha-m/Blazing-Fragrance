@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Blazing Fragrance</title>
+<style>
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+ body {
+      font-family: Arial, sans-serif;
+    }
+ .header {
+      background-color: purple;
+      padding: 10px;
+    }
+ .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      color: white;
+    }
+  .logo {
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+   .navbar ul {
+    display: flex;
+    list-style-type: none;
+    }
+  .navbar li {
+      margin-left: 30px;
+   }
+   .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+    }
+  .navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  }
+   .navbar-links {
+      display: flex;
+    }
+   @media (max-width: 768px) {
+  .navbar-links {
+   display: none;
+   width: 100%;
+   flex-direction: column;
+   align-items: center;
+   background-color: purple;
+   position: absolute;
+   top: 60px;
+   left: 0;
+  padding: 10px 0;
+ }
+  .navbar-links.active {
+   display: flex;
+  }
+  .menu-icon {
+  display: block;
+   font-size: 30px;
+  }
+  .navbar li {
+    margin-left: 0;
+    margin-bottom: 10px;
+      }
+    }
+  section
+{
+    padding: 2rem 9%;
+  }
+.home
+{
+   display: flex; 
+   align-items: center;
+
+   min-height: 100vh;
+   background-image:url(images/bg\ 1\ image.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   cursor: pointer;
+}
+.home .content
+{
+    max-width: 50rem;
+}
+.home .content h3
+{
+    font-size: 3rem;
+    color: yellow;
+}
+.home .content span{
+    font-size: 2rem;
+    color:yellowgreen;
+    padding: 1rem ;
+    line-height: 1.5;
+}
+.home .content p{
+    font-size: 1.5rem;
+    color:white;
+    line-height: 1.5;
+    padding:1rem 0 ;
+    
+
+}
+.btn
+{
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: darkmagenta;
+    color: white;
+    padding: 0.9rem 3.5rem;
+    border-radius: 20px;
+}
+/* fragrance page start */
+
+    .medium-button {
+    padding:10px 10px; 
+    font-size: 20px;
+    color:black; 
+    
+    background-color:white; 
+    border:2px solid black;
+    border-radius: 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+
+}
+
+.medium-button:hover {
+    background-color: whitesmoke; 
+    
+}
+
+.medium-button:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    cursor: pointer;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color:purple;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card-button:hover {
+    background-color:palevioletred;
+    cursor: pointer;
+}
+.star{
+    color: purple;
+    font-size: 30px;
+}
+/* footer section start */
+section
+{
+    padding: 2rem 9%;
+
+}
+.home
+{
+   display: flex; 
+   align-items: center;
+
+   min-height: 100vh;
+   background-image:url(images/bg\ 1\ image.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   cursor: pointer;
+}
+.home .content
+{
+    max-width: 50rem;
+}
+.home .content h3
+{
+    font-size: 3rem;
+    color: yellow;
+}
+.home .content span{
+    font-size: 2rem;
+    color:yellowgreen;
+    padding: 1rem ;
+    line-height: 1.5;
+}
+.home .content p{
+    font-size: 1.5rem;
+    color:white;
+    line-height: 1.5;
+    padding:1rem 0 ;
+    
+
+}
+.btn
+{
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: darkmagenta;
+    color: white;
+    padding: 0.9rem 3.5rem;
+    border-radius: 20px;
+}
+.btn{
+    text-decoration: underline;
+    
+}
+.btn:hover{
+    background-color:palevioletred;
+    cursor: pointer;
+}
+/* fragrance page start */
+.medium-button {
+    padding:10px 10px; 
+    font-size: 20px;
+    color:black; 
+    
+    background-color:white; 
+    border:2px solid black;
+    border-radius: 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+
+}
+
+.medium-button:hover {
+    background-color: whitesmoke; 
+    
+}
+
+.medium-button:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    cursor: pointer;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color:purple;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card-button:hover {
+    background-color:palevioletred;
+    cursor: pointer;
+}
+.star{
+    color: purple;
+    font-size: 30px;
+}
+/* fragrance page end */
+/* footer section start */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.footer {
+  background-color:purple;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-height: max-content;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 0 20px;
+}
+
+.footer-section h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.footer-section p {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  margin-top: 10px;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.footer-section ul li a:hover {
+  color: #ff6347;
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #ccc;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff6347;
+} 
+
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  background-color: purple;
+  font-size: 0.9em;
+  color: white;
+  
+  }
+  .white hr{
+    color: white;
+    width: 100px;
+    padding-bottom: 10px;
+    padding: 30px;
+   }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 20px 0;
+    text-align: center;
+  }
+}
+ </style>
+  </head>
+  <body>
+  <!-- Navbar Section start -->
+  <div class="header">
+  <nav class="navbar">
+  <h1 class="logo">Blazing Fragrance</h1>
+  <ul class="navbar-links" id="navbar-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="Fragrance.html">Fragrances</a></li>
+  <li><a href="About.html">About Us</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="review.html">Review</a></li>
+  <li><a href="Login.html">Login</a></li>
+  </ul>
+  </nav>
+  </div>
+  <!-- Navbar section end -->
+   <!-- Home Section -->
+  <section class="home" id="home">
+  <div class="content">
+  <h3>Fresh Fragrance</h3>
+  <span>Natural & Aromatic</span>
+  <p>Fragrance is an art form that transcends mere scent, evoking emotions, memories, and sensations. Each fragrance tells a story...</p>
+  <br>
+  <br>
+  <a href="#" class="btn">Shop Now</a>
+  </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <!-- Home section end -->
+   <!-- Fragrance  Section start -->
+  <center>
+    <button class="medium-button">OUR LATEST PRODUCTS</button>
+    </center>
+     <br>
+     <br>
+     <br>
+     <div class="card-container">
+     <div class="card">
+     <img src="images/home perfume 14.jpeg" class="a" alt="Image 20" class="card-image">
+     <div class="card-content">
+     <h2 class="card-title">Perfume</h2>
+    <p>A good fragrance can boost confidence and uplift spirits.</p>
+    <h2><div class="price">$560.00</div></h2>
+     <a href="#" class="card-button">Add to cart</a>
+     <br>
+     <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    </div>
+    </div>
+     <div class="card">
+    <img src="images/home perfume 15 image.jpeg" class="a" alt="Image 20" class="card-image" >
+    <div class="card-content">
+    <h2 class="card-title">Perfume</h2>
+     <p>The right fragrance can transform your mood and mindset.</p>
+     <h2> <div class="presence">$600.00</div></h2>
+    <a href="#" class="card-button">Add to cart</a>
+    <br>
+    <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     </div>
+    </div>
+     <div class="card">
+     <img src="images/home perfume 16 image.jpeg" class="a" alt="Image 20" class="card-image" >
+     <div class="card-content">
+    <h2 class="card-title">Perfume</h2>
+    <p>Perfume application can be an intimate ritual for many.</p>
+    <h2><div class="price">$400.00</div></h2>
+    <a href="#" class="card-button">Add to cart</a>
+    <br>
+    <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     </div>
+     </div>
+     <div class="card">
+     <img src="images/home perfume 17.jpeg" class="a" alt="Image 20" class="card-image">
+     <div class="card-content">
+     <h2 class="card-title">Perfume</h2>
+     <p>Fragrance ingredients can be natural or synthetic, each with its own charm.</p>
+     <h2><div class="price">$500.00</div></h2>
+     <a href="#" class="card-button">Add to cart</a>
+     <br>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     </div>
+     </div>
+     <div class="card">
+     <img src="images/home perfume 18.jpeg" class="a" alt="Image 20" class="card-image" >
+     <div class="card-content">
+     <h2 class="card-title">perfume</h2>
+     <p>Scent can be a powerful form of non-verbal communication.</p>
+     <h2><div class="price">$529.00</div></h2>
+     <a href="#" class="card-button">Add to cart</a>
+     <br>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+     </div>
+     </div>
+     <div class="card">
+     <img src="images/home perfume 8 image.jpeg" class="a" alt="Image 20" class="card-image" >
+     <div class="card-content">
+     <h2 class="card-title">Perfume</h2>
+     <p>The fragrance industry continuously evolves with new trends and innovations.</p>
+     <h2> <div class="price">$520.00</div></h2>
+     <a href="#" class="card-button">Add to cart</a>
+     <br>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     </div>
+     </div>
+     <div class="card">
+     <img src="images/home perfume 11.jpeg" class="a" alt="Image 20" class="card-image" >
+     <div class="card-content">
+     <h2 class="card-title">Perfume</h2>
+     <p >Finding your signature scent is a journey of exploration and discovery.</p>
+     <h2><div class="price">$490.00</div></h2>
+     <a href="#" class="card-button">Add to cart</a>
+     <br>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     </div>
+     </div>
+     <div class="card">
+     <img src="images/perfume 9 image.jpeg" class="a" alt="Image 20" class="card-image">
+     <div class="card-content">
+     <h2 class="card-title">Perfume</h2>
+     <p>The fragrance industry continuously evolves with new trends and innovations.</p>
+     <h2><div class="price">$540.00</div> </h2> 
+     <a href="#" class="card-button">Add to cart</a>
+     <br>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     <span class="star">&#9733;</span>
+     </div>
+     </div>
+     </div> 
+   <!-- Fragrance  section end-->
+     <br>
+     <br>
+     <br>
+   <!-- Footer Section start -->
+   <footer class="footer">
+   <div class="footer-container">
+   <div class="footer-section">
+   <h4>About Us</h4>
+   <p>We offer the finest fragrances to make every moment memorable. Discover your perfect scent with Blazing Fragrance.</p>
+   </div>
+   <div class="footer-section">
+   <h4>Quick Links</h4>
+   <ul>
+   <li><a href="index.html"> Home</a></li>
+   <li><a href="Fragrance.html"> <img src="images/perfume icon.png" alt=""  height="20px" width="20px">Fragrance</a></li>
+   <li><a href="About.html"> <img src="images/about icon.png" alt=""  height="20px" width="20px">AboutUs</a></li>
+  <li><a href="contact.html"> <img src="images/contet icon.png" alt=""  height="20px" width="20px">Contact</a></li>
+  <li><a href="Login.html"><img src="images/login icon.png" alt=""  height="20px" width="20px">Login</a></li>
+  </ul>
+  </div>
+  <div class="footer-section">
+  <h4>Contact</h4>
+  <p>19/42 Mammuti street,sendhamangalam,namakkal District. </p>
+  <p>Email: support@blazingfragrance.com</p>
+  <p>Phone: 8122727246</p>
+  </div>
+  <div class="footer-section">
+  <h4>Follow Us</h4>
+  <div class="social-icons">
+  <a href="#"> <img src="images/facebook.png" alt="" height="40px" width="40px">Facebook</a>
+  <a href="#"> <img src="images/Instragram.png" alt="" height="40px" width="40px">Instagram</a>
+  <a href="#"> <img src="images/Twitter1.png" alt="" height="40px" width="50px">Twitter</a>
+  </div>
+  </div>
+  </div>
+  <div class="footer-bottom">
+  <hr class="white hr">
+  <br>
+  <p>&copy; @2024 Blazing Fragrance. All rights reserved.</p>
+  </div>
+  </footer>
+  <!-- Footer section end -->
+  </body>
+  </html>
