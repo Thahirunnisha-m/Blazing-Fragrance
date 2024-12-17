@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+   <title>Frozen Fantasy</title>
+    <style>
+        body{
+      background-color:white;
+    }
+   /*Header section start  */
+    .navbar {
+      background-color:orangered; 
+     }
+    .navbar-brand {
+      color: black!important; 
+     }
+    .navbar-nav .nav-link {
+      color: white !important; 
+     }
+    .navbar-nav .nav-link:hover {
+      color: #ffcc00 !important;
+      box-sizing: border-box;
+      border-radius: 10px;
+     }
+    .dropdown-menu {
+      background-color:orange; 
+     }
+     .dropdown-item {
+      color: white !important; 
+     }
+    .dropdown-item:hover {
+      background-color: orangered; 
+      border-radius: 15px;
+    }
+    .navbar .form-control {
+      border-radius: 20px; 
+    }
+    .btn-outline-success {
+      border-radius: 20px; 
+    }
+
+    .btn-outline-success:hover {
+      background-color:orange;
+      color: white;
+    }
+     /* header section end */
+     /* Add to cart section start */
+    .card button {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    }
+    .card button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+   .card button:active {
+    background-color: #ff9900;
+    }
+  /* cart button end */
+  /* shopping cart section start */
+    #cart-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    }
+   #cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   }
+   .cart-item {
+    background-color: orangered;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+  .cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+   }
+   .cart-item-details {
+    flex-grow: 1;
+    padding-left: 15px;
+     }
+   .cart-item h4 {
+    margin-bottom: 5px;
+    }
+   .cart-item p {
+    margin-bottom: 5px;
+    }
+    .cart-item .btn {
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+     }
+   .cart-item .btn:hover {
+    background-color: #ffcc00;
+    color: black;
+   }
+   #cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     }
+   #checkout {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    }
+   #checkout:hover {
+    background-color: #ffcc00;
+    color: black;
+   } 
+   /* shopping cart section end */
+   .shopping{
+    padding-right: 40px;
+    text-align: center;
+    }
+  /* Basic reset for the button */
+    .btn button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 24px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+     }
+  /* Modern button styling */
+   .btn {
+  background-color: orange; 
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   }
+  .btn:hover {
+  background-color:orangered;
+  transform: translateY(-2px);
+  }
+ .btn:active {
+  background-color: yellow; 
+  transform: translateY(0);
+    }
+   /* Responsive design */
+   @media (max-width: 768px) {
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px; 
+    }
+   }
+  @media (max-width: 480px) {
+    .btn {
+    font-size: 12px;
+    padding: 8px 16px; 
+    }
+   }
+/* Add to cart section end */
+/* Butter scotch page start */
+   .container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+   }
+   .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.3s;
+    font-size: 14px;
+   }
+  .card:hover {
+    transform: scale(1.05);
+    }
+   .card img {
+    width: 100%;
+    border-radius: 10px;
+     }
+    .price {
+    font-size: 1.2em;
+    color: #333;
+    }
+    .discount {
+    color: red;
+    font-weight: bold;
+    }
+    .rating {
+    margin: 10px 0;
+     }
+   .add-to-cart {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+     }
+   .add-to-cart:hover {
+    background-color: orange;
+  }
+  .price {
+  font-size: 18px;
+  font-weight: bold;
+  color:orangered;
+    }
+    .discount {
+      text-decoration: line-through;
+      color:green;
+      }
+   /* Butter scotch page end */
+   /* Footer section start */
+   .footer {
+    background-color: orangered;
+    color:white;
+    padding: 20px 0;
+    text-align: center;
+   }
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+   }
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+   }
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color:white;
+  }
+ .footer-section ul {
+    list-style-type: none;
+  }
+
+ .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  .footer-section ul li a {
+    text-decoration: none;
+    color:white;
+    transition: color 0.3s ease;
+  }
+
+  .footer-section ul li a:hover {
+    color: black; 
+   }
+   .social-links li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+   }
+
+  .social-links a:hover {
+    color: white;
+   }
+  .icon 
+   {
+    color: white;
+   }
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color:white;
+    }
+  .white hr 
+    {
+      color: white;
+    }
+     @media screen and (max-width: 768px) {
+     .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .footer-section {
+        text-align: center;
+      }
+      .footer-bottom {
+          font-size: 1rem;
+       }
+      }
+      /* Footer section end */
+    </style>
+</head>
+<body>
+    <!-- Header section start -->
+    <nav class="navbar navbar-expand-lg navbar-orange bg-orenge">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">𝓕𝓻𝓸𝔃𝓮𝓷 𝓕𝓪𝓷𝓽𝓪𝓼𝔂</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-8 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><img src="image/home icone.png" alt="" height="20px" width="20px">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About Us.html"> <img src="image/about icone.png" alt="" height="20px" width="20px">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Flavors.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="image/flavors.png" alt=""height="20px" width="20px">Flavors</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Vennila.html">Vennila</a></li>
+                  <li><a class="dropdown-item" href="Chocolate.html">Chocolate</a></li>
+                  <li><a class="dropdown-item" href="Strawberry.html">Strawberry</a></li>
+                  <li><a class="dropdown-item" href="Butter scotch.html">Butter Scotch</a></li>
+                  <li><a class="dropdown-item" href="Kulfi.html">Kulfi</a></li>
+                  <li><a class="dropdown-item" href="Pistachio.html">Pistachio</a></li>
+                  <li><a class="dropdown-item" href="Fried ice.html">Fried ice</a></li>
+                  <li><a class="dropdown-item" href="Ice popsicle.html">Ice Popsicle</a></li>
+                  <li><a class="dropdown-item" href="Waffle Sandwhich.html">Waffle Sandwhich</a></li>
+                </ul>
+              </li>
+      <li class="nav-item">
+      <a class="nav-link" href="Review.html"><img src="image/review.png" alt="" height="20px" width="20px">Review</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="Contact.html"> <img src="image/contact icone.png" alt="" height="20px" width="20px">Contact</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="Login.html"> <img src="image/login 2.png" alt="" height="20px" width="20px">Login</a>
+      </li>
+      </ul>
+      <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-warning" type="submit">Search</button>
+      </form>
+      </div>
+      </div>
+      </nav>
+    <!-- header section end -->
+    <!-- Butter scotch page start -->
+    <div class="container">
+          <br>
+          <h1>𝐁𝐮𝐭𝐭𝐞𝐫𝐬𝐜𝐨𝐭𝐜𝐡 𝐅𝐥𝐚𝐯𝐨𝐮𝐫𝐬</h1>
+          <div class="card-container">
+             
+              <div class="card">
+                  <img src="image/butter 1.jpg" alt=" butter" height="200px" width="200px">
+                  <h2>Butter Scotch </h2>
+                  <p><span class="discount"> $150.00</span></p>
+                  <p class="price">$135.00</p>
+                  <div class="rating">⭐⭐⭐⭐⭐</div>
+                   <div>
+                    <button onclick="addToCart('𝖕𝖗𝖔𝖉𝖚𝖈𝖙 1', 60 ,'image/butter 1.jpg')">Add to Cart</button>
+                    </div>
+                       </div>
+              <!-- 2 -->
+              <div class="card">
+                  <img src="image/butter 10.jpg" alt="butter" height="200px" width="200px">
+                  <h2>Butter Scotch </h2>
+                  <p><span class="discount"> $120.00</span></p>
+                  <p class="price">$110.00</p>
+                  <div class="rating">⭐⭐⭐⭐⭐</div>
+                  <div>
+                      <button onclick="addToCart('𝖕𝖗𝖔𝖉𝖚𝖈𝖙 2', 30 ,'image/butter 10.jpg')">Add to Cart</button>
+                       </div>
+                 </div>
+              <!-- 3 -->
+  <div class="card">
+ <img src="image/butter 2.jpg" alt="butter" height="200px" width="200px">
+   <h2>Butter Scotch </h2>
+    <p><span class="discount"> $160.00</span></p>
+  <p class="price">$150.00</p>
+ <div class="rating">⭐⭐⭐⭐⭐</div>
+    <div>
+ <button onclick="addToCart('𝖕𝖗𝖔𝖉𝖚𝖈𝖙 3', 40 ,'image/butter 2.jpg')">Add to Cart</button>
+    </div>
+     </div>
+              <!-- 4 -->
+              <div class="card">
+                  <img src="image/butter 3.jpg" alt="butter" height="200px" width="200px">
+                  <h2>Butter Scotch </h2>
+                  <p ><span class="discount">$170.00</span></p>
+                  <p class="price">$145.00</p>
+                  <div class="rating">⭐⭐⭐⭐⭐</div>
+                  <div>
+                      
+                       <button onclick="addToCart('𝖕𝖗𝖔𝖉𝖚𝖈𝖙 4', 50 ,'image/butter 3.jpg')">Add to Cart</button>
+                       </div>
+                      </div>
+              <!-- 5 -->
+              <div class="card">
+                  <img src="image/butter 4.jpg" alt="butter" height="200px" width="200px">
+                  <h2>Butter Scotch </h2>
+                  <p><span class="discount"> $130.00</span></p>
+                  <p class="price">$120.00</p>
+                  <div class="rating">⭐⭐⭐⭐⭐</div>
+                  <div>
+                      
+                       <button onclick="addToCart('𝖕𝖗𝖔𝖉𝖚𝖈𝖙 5', 70 ,'image/butter 4.jpg')">Add to Cart</button>
+                       </div>
+                   </div>
+              <!-- 6 -->
+              <div class="card">
+                  <img src="image/butter 5.jpg" alt=" butter" height="200px" width="200px">
+                  <h2>Butter Scotch </h2>
+                  <p><span class="discount"> $100.00</span></p>
+                  <p class="price">$90.00</p>
+                  <div class="rating">⭐⭐⭐⭐⭐</div>
+                  <div>
+                      
+                       <button onclick="addToCart('𝖕𝖗𝖔𝖉𝖚𝖈𝖙 6', 40 ,'image/butter 5.jpg')">Add to Cart</button>
+                       </div>
+                      </div>
+              <!-- 7 -->
+              <div class="card">
+                  <img src="image/butter 6.jpg" alt="butter" height="200px" width="200px">
+                  <h2>Butter Scotch </h2>
+                  <p><span class="discount"> $180.00</span></p>
+                  <p class="price">$165.00</p>
+                  <div class="rating">⭐⭐⭐⭐⭐</div>
+                  <div>
+                      
+                       <button onclick="addToCart('𝖕𝖗𝖔𝖉𝖚𝖈𝖙 7', 80,'image/butter 6.jpg')">Add to Cart</button>
+                       </div>
+                      </div>
+              <!-- 8 -->
+              <div class="card">
+                  <img src="image/butter 7.jpg" alt="butter" height="200px" width="200px">
+                  <h2>Butter Scotch </h2>
+                  <p><span class="discount">$90.00</span></p>
+                  <p class="price">$85.00</p>
+                  <div class="rating">⭐⭐⭐⭐⭐</div>
+                  <div>
+                       <button onclick="addToCart('𝖕𝖗𝖔𝖉𝖚𝖈𝖙 8', 57,'image/butter 7.jpg')">Add to Cart</button>
+                         </div>
+                   </div>
+              <!-- 9 -->
+              <div class="card">
+                  <img src="image/butter 8.jpg" alt="butter" height="200px" width="200px">
+                  <h2>Butter Scotch </h2>
+                  <p><span class="discount"> $110.00</span></p>
+                  <p class="price">$100.00</p>
+                  <div class="rating">⭐⭐⭐⭐⭐</div>
+                  <div>
+                      
+                       <button onclick="addToCart('𝖕𝖗𝖔𝖉𝖚𝖈𝖙 9', 63,'image/butter 8.jpg')">Add to Cart</button>
+                       </div>
+                  </div>
+              <!-- 10 -->
+              <div class="card">
+                  <img src="image/butter 9.jpg" alt="butter" height="200px" width="200px">
+                  <h2>Butter Scotch </h2>
+                  <p><span class="discount"> $170.00</span></p>
+                  <p class="price">$165.00</p>
+                  <div class="rating">⭐⭐⭐⭐⭐</div>
+                  <div>
+                   <button onclick="addToCart('𝖕𝖗𝖔𝖉𝖚𝖈𝖙 10', 72,'image/butter 9.jpg')">Add to Cart</button>
+                    </div>
+                  
+                  </div>
+              </div>
+           </div>
+         
+         <h2 class="shopping">𝙎𝙝𝙤𝙥𝙥𝙞𝙣𝙜 𝘾𝙖𝙧𝙩</h2>
+      <div id="cart-container" class="container">
+      <div id="cart-items" class="row">
+         
+      </div>
+      <div id="cart-summary" class="mt-4">
+          <h3>𝗧𝗼𝘁𝗮𝗹: <span id="total">$0</span></h3>
+          <button id="checkout" class="btn btn-warning">Checkout</button>
+      </div>
+     </div>
+  
+      
+       <!-- Butter scotch page end -->
+          
+          
+  
+  
+          <!-- footer section start --> 
+           <footer class="footer">
+              <div class="footer-container">
+                  
+                  <div class="footer-section">
+                      <h3>About Us</h3>
+                      <p>We offer a variety of delicious and creamy ice creams made with love and fresh ingredients.</p>
+                  </div>
+        
+                  
+                  <div class="footer-section">
+                      <h3>Quick Links</h3>
+                      <ul>
+                          <li><a href="index.html"></a>Home</a></li>
+                          <li><a href="About Us.html">About</a></li>
+                          <li><a href="Login.html">Follow</a></li>
+                          <li><a href="Contact.html">Contact</a></li>
+                      </ul>
+                  </div>
+        
+                 
+                  <div class="footer-section">
+                      <h3>Follow Us</h3>
+                      <ul class="social-links">
+                          <li><a href="#"> <img src="image/facebook icone.png" alt="" height="40px" width="40px"></a></li>
+                          <li><a href="#"> <img src="image/insta icone.png" alt="" height="40px" width="40px"></a></li>
+                          <li><a href="#"> <img src="image/twitter.png" alt=""  height="40px" width="40px"></a></li>
+                          <li><a href="#"> <img src="image/telegram.png" alt=""  height="40px" width="40px"></a></li>
+                      </ul>
+                  </div>
+        
+                  
+                  <div class="footer-section">
+                      <h3>Contact Us</h3>
+                      <p>Email: contact@Frozenfantasy.com</p>
+                      <p>Phone: 91+8122727246</p>
+                  </div>
+              </div>
+            <hr class="white-hr">
+              <div class="footer-bottom">
+                  <p>&copy; 2024 Ice Cream Shop | All Rights Reserved</p>
+              </div>
+          </footer>
+       <!-- footer section end -->
+       
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" ></script>
+  
+  <script src="cart.js"></script>
+      
+    </body>
+   </html>
+        
+        
+
+
+        
+      
+        
+      
+
+     

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Frozen Fantasy</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       body{
+      background-color:white;
+    }
+   /*Header section start  */
+    .navbar {
+      background-color:orangered; 
+     }
+    .navbar-brand {
+      color: black!important; 
+     }
+    .navbar-nav .nav-link {
+      color: white !important; 
+     }
+    .navbar-nav .nav-link:hover {
+      color: #ffcc00 !important;
+      box-sizing: border-box;
+      border-radius: 10px;
+     }
+    .dropdown-menu {
+      background-color:orange; 
+     }
+     .dropdown-item {
+      color: white !important; 
+     }
+    .dropdown-item:hover {
+      background-color: orangered; 
+      border-radius: 15px;
+    }
+    .navbar .form-control {
+      border-radius: 20px; 
+    }
+    .btn-outline-success {
+      border-radius: 20px; 
+    }
+
+    .btn-outline-success:hover {
+      background-color:orange;
+      color: white;
+    }
+     /* header section end */
+    /* About page strat */
+   .container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px; 
+   }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+ }
+
+.about-image {
+    width: 100%; 
+    max-width: 400px; 
+    border-radius: 10px; 
+    margin-bottom: 20px;
+}
+
+.about-text h1 {
+    font-size: 2em;
+    color:black; 
+    margin-bottom: 10px; 
+}
+
+.about-text p {
+    color: black; 
+    line-height: 1.6; 
+}
+
+
+@media (min-width: 600px) {
+    .about-content {
+        flex-direction: row;
+        align-items: flex-start; 
+    }
+
+    .about-image {
+        margin-right: 20px; 
+    }
+
+    .about-text {
+        max-width: 600px; 
+    }
+}
+
+
+
+.button-container {
+    text-align: center;
+
+}
+
+
+
+.shop-now-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color:orangered; 
+    border: none;
+    border-radius: 30px; 
+    text-decoration: none;
+    box-shadow: 0 4px 10px black;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.shop-now-button:hover {
+    background-color: orange; 
+    transform: translateY(-2px); 
+}
+
+.shop-now-button:active {
+    transform: translateY(0); 
+}
+
+
+/* About page end */
+
+
+
+  /* Footer section start */
+  .footer {
+    background-color: orangered;
+    color:white;
+    padding: 20px 0;
+    text-align: center;
+   }
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+   }
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+   }
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color:white;
+  }
+ .footer-section ul {
+    list-style-type: none;
+  }
+
+ .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  .footer-section ul li a {
+    text-decoration: none;
+    color:white;
+    transition: color 0.3s ease;
+  }
+
+  .footer-section ul li a:hover {
+    color: black; 
+   }
+   .social-links li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+   }
+
+  .social-links a:hover {
+    color: white;
+   }
+  .icon 
+   {
+    color: white;
+   }
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color:white;
+    }
+  .white hr 
+    {
+      color: white;
+    }
+     @media screen and (max-width: 768px) {
+     .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .footer-section {
+        text-align: center;
+      }
+      .footer-bottom {
+          font-size: 1rem;
+       }
+      }
+      /* Footer section end */
+  </style>
+  </head>
+  <body>
+    <!-- Header section start -->
+    <nav class="navbar navbar-expand-lg navbar-orange bg-orenge">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="#">𝓕𝓻𝓸𝔃𝓮𝓷 𝓕𝓪𝓷𝓽𝓪𝓼𝔂</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-8 mb-lg-0">
+      <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="index.html"><img src="image/home icone.png" alt="" height="20px" width="20px">Home</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="About Us.html"> <img src="image/about icone.png" alt="" height="20px" width="20px">About</a>
+      </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="Flavors.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="image/flavors.png" alt=""height="20px" width="20px">Flavors</a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <li><a class="dropdown-item" href="Vennila.html">Vennila</a></li>
+      <li><a class="dropdown-item" href="Chocolate.html">Chocolate</a></li>
+      <li><a class="dropdown-item" href="Strawberry.html">Strawberry</a></li>
+      <li><a class="dropdown-item" href="Butter scotch.html">Butter Scotch</a></li>
+      <li><a class="dropdown-item" href="Kulfi.html">Kulfi</a></li>
+      <li><a class="dropdown-item" href="Pistachio.html">Pistachio</a></li>
+      <li><a class="dropdown-item" href="Fried ice.html">Fried ice</a></li>
+      <li><a class="dropdown-item" href="Ice popsicle.html">Ice Popsicle</a></li>
+      <li><a class="dropdown-item" href="Waffle Sandwhich.html">Waffle Sandwhich</a></li>
+      </ul>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="Review.html"><img src="image/review.png" alt="" height="20px" width="20px">Review</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="Contact.html"> <img src="image/contact icone.png" alt="" height="20px" width="20px">Contact</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="Login.html"> <img src="image/login 2.png" alt="" height="20px" width="20px">Login</a>
+      </li>
+      </ul>
+      <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-warning" type="submit">Search</button>
+      </form>
+      </div>
+      </div>
+      </nav>
+      <!-- header section end -->
+      <!-- About page start -->
+      <br>
+      <br>
+      <div class="container">
+      <div class="about-content">
+            <img src="image/orenge ice cream image.jpeg" alt="About Us" class="about-image">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <p>Welcome to Frozen Fantasy. We are dedicated to we are dedicated to crafting delicious, high-quality ice cream using only the finest ingredients, creating smiles and memorable moments for our community.</p>
+                <p>With a passion for  we pride ourselves on offering a delightful range of handcrafted ice cream flavors, including vegan and dairy-free options, all made with locally sourced ingredients, we strive to provide we offer an exciting variety of flavors, including classic favorites, seasonal specials, and unique creations, all made with the finest local ingredients! that stands out becauseWe specialize in small-batch, artisanal ice cream made from organic ingredients, ensuring each scoop is fresh, flavorful, and uniquely crafted just for you!.</p>
+                 <p>Join us on this journey to and treat yourself to a scoop (or two!) of our finest flavors. Your sweet adventure awaits!. We’re excited to connect with you!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="button-container">
+        <center>
+        <a href="#" class="shop-now-button">Shop Now</a>
+    </center>
+    </div>
+
+    <br>
+   <!-- footer section start -->
+   <footer class="footer">
+    <div class="footer-container">
+        
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>We offer a variety of delicious and creamy ice creams made with love and fresh ingredients.</p>
+        </div>
+
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html"></a>Home</a></li>
+                <li><a href="About Us.html">About</a></li>
+                <li><a href="Login.html">Follow</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+       
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+                <li><a href="#"> <img src="image/facebook icone.png" alt="" height="40px" width="40px"></a></li>
+                <li><a href="#"> <img src="image/insta icone.png" alt="" height="40px" width="40px"></a></li>
+                <li><a href="#"> <img src="image/twitter.png" alt=""  height="40px" width="40px"></a></li>
+                <li><a href="#"> <img src="image/telegram.png" alt=""  height="40px" width="40px"></a></li>
+            </ul>
+        </div>
+
+        
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: contact@Frozenfantasy.com</p>
+            <p>Phone: 91+8122727246</p>
+        </div>
+    </div>
+  <hr>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Ice Cream Shop | All Rights Reserved</p>
+    </div>
+</footer>
+<!-- footer section end -->
+
+
+      <!-- Bootstrap JS & Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

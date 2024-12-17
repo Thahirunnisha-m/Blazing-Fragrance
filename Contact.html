@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frozen Fantasy</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     body{
+      background-color:white;
+    }
+   /*Header section start  */
+    .navbar {
+      background-color:orangered; 
+     }
+    .navbar-brand {
+      color: black!important; 
+     }
+    .navbar-nav .nav-link {
+      color: white !important; 
+     }
+    .navbar-nav .nav-link:hover {
+      color: #ffcc00 !important;
+      box-sizing: border-box;
+      border-radius: 10px;
+     }
+    .dropdown-menu {
+      background-color:orange; 
+     }
+     .dropdown-item {
+      color: white !important; 
+     }
+    .dropdown-item:hover {
+      background-color: orangered; 
+      border-radius: 15px;
+    }
+    .navbar .form-control {
+      border-radius: 20px; 
+    }
+    .btn-outline-success {
+      border-radius: 20px; 
+    }
+
+    .btn-outline-success:hover {
+      background-color:orange;
+      color: white;
+    }
+     /* header section end */
+    /* contect page start */
+    .contact-section {
+      padding: 50px 0;
+     }
+   .contact-section h2 {
+      color: #333;
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .contact-form {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+   .form-label {
+      font-weight: 600;
+    }
+   .form-control {
+      border-radius: 10px;
+    }
+    .btn-primary {
+      background-color: orangered;
+      border: none;
+      border-radius: 20px;
+    }
+    .btn-primary:hover {
+      background-color:orange;
+    }
+    .alert {
+      margin-top: 20px;
+      display: none;
+    }
+    input[type="text"]:valid, input[type="email"]:valid, textarea:valid {
+      border: 1px solid green;
+    }
+    input[type="text"]:invalid, input[type="email"]:invalid, textarea:invalid {
+      border: 1px solid red;
+    }
+    /* contact page end */
+    /* Footer section start */
+   .footer {
+    background-color: orangered;
+    color:white;
+    padding: 20px 0;
+    text-align: center;
+   }
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+   }
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+   }
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color:white;
+  }
+ .footer-section ul {
+    list-style-type: none;
+  }
+
+ .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  .footer-section ul li a {
+    text-decoration: none;
+    color:white;
+    transition: color 0.3s ease;
+  }
+
+  .footer-section ul li a:hover {
+    color: black; 
+   }
+   .social-links li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+   }
+
+  .social-links a:hover {
+    color: white;
+   }
+  .icon 
+   {
+    color: white;
+   }
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color:white;
+    }
+  .white hr 
+    {
+      color: white;
+    }
+     @media screen and (max-width: 768px) {
+     .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .footer-section {
+        text-align: center;
+      }
+      .footer-bottom {
+          font-size: 1rem;
+       }
+      }
+      /* Footer section end */
+      </style>
+      </head>
+      <body>
+     <!-- Header section start -->
+     <nav class="navbar navbar-expand-lg navbar-orange bg-orenge">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="#">𝓕𝓻𝓸𝔃𝓮𝓷 𝓕𝓪𝓷𝓽𝓪𝓼𝔂</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-8 mb-lg-0">
+      <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="index.html"><img src="image/home icone.png" alt="" height="20px" width="20px">Home</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="About Us.html"> <img src="image/about icone.png" alt="" height="20px" width="20px">About</a>
+      </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="Flavors.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="image/flavors.png" alt=""height="20px" width="20px">Flavors</a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <li><a class="dropdown-item" href="Vennila.html">Vennila</a></li>
+      <li><a class="dropdown-item" href="Chocolate.html">Chocolate</a></li>
+      <li><a class="dropdown-item" href="Strawberry.html">Strawberry</a></li>
+      <li><a class="dropdown-item" href="Butter scotch.html">Butter Scotch</a></li>
+      <li><a class="dropdown-item" href="Kulfi.html">Kulfi</a></li>
+      <li><a class="dropdown-item" href="Pistachio.html">Pistachio</a></li>
+      <li><a class="dropdown-item" href="Fried ice.html">Fried ice</a></li>
+      <li><a class="dropdown-item" href="Ice popsicle.html">Ice Popsicle</a></li>
+      <li><a class="dropdown-item" href="Waffle Sandwhich.html">Waffle Sandwhich</a></li>
+      </ul>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="Review.html"><img src="image/review.png" alt="" height="20px" width="20px">Review</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="Contact.html"> <img src="image/contact icone.png" alt="" height="20px" width="20px">Contact</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="Login.html"> <img src="image/login 2.png" alt="" height="20px" width="20px">Login</a>
+      </li>
+      </ul>
+      <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-warning" type="submit">Search</button>
+      </form>
+      </div>
+      </div>
+      </nav>
+      <!-- header section end -->
+      <!-- contact section start -->
+    <div class="container contact-section">
+     <h2>Contact Us</h2>
+     <div class="row justify-content-center">
+     <div class="col-md-8 col-lg-6">
+     <div class="contact-form">
+     <form id="contactForm">
+     <div class="mb-3">
+     <label for="name" class="form-label">Your Name</label>
+     <input type="text" class="form-control" id="name" pattern="[A-Za-z]{3,}" placeholder="Enter your name" required>
+     <div class="invalid-feedback">Please enter your name.</div>
+     </div>
+     <div class="mb-3">
+     <label for="email" class="form-label">Your Email</label>
+     <input type="email" class="form-control" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Enter your email" required>
+     <div class="invalid-feedback">Please enter a valid email address.</div>
+     </div>
+     <div class="mb-3">
+     <label for="message" class="form-label">Your Message</label>
+     <textarea class="form-control" id="message" pattern="[A-Za-z]{20,}" rows="4" placeholder="Enter your message" required></textarea>
+     <div class="invalid-feedback">Please enter a message.</div>
+     </div>
+     <button type="submit" class="btn btn-primary">Send Message</button>
+    <div class="alert alert-success mt-3" id="successMessage" role="alert">
+    Thank you for contacting us! We'll get back to you soon.
+    </div>
+    </form>
+     </div>
+     </div>
+     </div>
+     </div>
+   <!-- contect page end -->
+   <!-- Footer Section -->
+    <footer class="footer">
+    <div class="footer-container">
+    <div class="footer-section">
+    <h3>About Us</h3>
+    <p>We offer a variety of delicious and creamy ice creams made with love and fresh ingredients.</p>
+    </div>
+    <div class="footer-section">
+    <h3>Quick Links</h3>
+    <ul>
+   <li><a href="index.html"></a>Home</a></li>
+   <li><a href="About Us.html">About</a></li>
+   <li><a href="Login.html">Follow</a></li>
+   <li><a href="Contact.html">Contact</a></li>
+   </ul>
+   </div>
+   <div class="footer-section">
+   <h3>Follow Us</h3>
+   <ul class="social-links">
+   <li><a href="#"> <img src="image/facebook icone.png" alt="" height="40px" width="40px"></a></li>
+   <li><a href="#"> <img src="image/insta icone.png" alt="" height="40px" width="40px"></a></li>
+   <li><a href="#"> <img src="image/twitter.png" alt=""  height="40px" width="40px"></a></li>
+   <li><a href="#"> <img src="image/telegram.png" alt=""  height="40px" width="40px"></a></li>
+   </ul>
+   </div>
+   <div class="footer-section">
+   <h3>Contact Us</h3>
+   <p>Email: contact@Frozenfantasy.com</p>
+   <p>Phone: 91+8122727246</p>
+   </div>
+   </div>
+   <hr class="white-hr">
+   <div class="footer-bottom">
+   <p>&copy; 2024 Ice Cream Shop | All Rights Reserved</p>
+   </div>
+   </footer>
+   <!-- footer section end -->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" ></script>
+    <script src="cart.js"></script>
+    </body>
+    </html>
+     
+     
+
+
+     
+   
+     
+   
+
+  
